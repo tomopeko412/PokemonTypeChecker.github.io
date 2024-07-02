@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/*ブラウザの既定スタイルを解除する--ここから*/
+
+/*要素の余白をなくす*/
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*リストの行頭アイコンを非表示にする*/
+ul,
+ol {
+  list-style: none;
+}
+
+/*リンクの文字色と下線をなくす*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*ブラウザの既定スタイルを解除する--ここまで*/
+body {
+  /*max-width: 100vh;*/
+  user-select: none;
+  /*ここからズーム禁止処理*/
+  touch-action: pan-x pan-y;
+  /*ここまでズーム禁止処理*/
+}
+
+.grid {
+  display: grid;
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+
+.grid * {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.grid li {
+  margin: 4%;
+}
+
+.grid li div {
+  width: 100%;
+}
+
+/*************ここから.result設定*************/
+.result {
+  height: 57vh;
+  background-color: antiquewhite;
+}
+
+#result .grid {
+  max-height: 57vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+/*親要素に高さの設定をしたい*/
+li:has(>.grid_result) {
+  height: calc(calc( 57vh - (57vh * 3 / 100 * 6)) / 6);
+}
+
+.grid_result {
+  /*margin: 3%;*/
+  padding: 2%;
+}
+
+.Compatibility-2 {
+  color: #ff0d00;
+}
+
+.Compatibility-half {
+  color: #000000;
+}
+
+/*************ここまで.result設定*************/
+/*************ここから.selecct-type設定*************/
+
+.select-type {
+  height: 31vh;
+  background-color: rgb(163, 108, 108);
+}
+
+#select-type .grid {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.grid_type {
+  height: calc(31vh/5);
+  padding: 3% 0px;
+}
+
+/*************ここまで.selecct-type設定*************/
+/*************ここから.Offense-Defense設定*************/
+
+.Offense-Defense {
+  height: 5vh;
+  background-color: rgb(207, 207, 207);
+}
+
+#Offense-Defense .grid {
+  height: calc(5vh);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_Offense-Defense {
+  padding: 1%;
+}
+
+.border {
+  border: 0.5vh inset #000000c5;
+}
+
+/*************ここまで.Offense-Defense設定*************/
+/*************ここから各タイプの背景色設定*************/
+
+.Normal {
+  background-color: #A8A878;
+}
+
+.Fire {
+  background-color: #F08030;
+}
+
+.Water {
+  background-color: #6890F0;
+}
+
+.Grass {
+  background-color: #78C850;
+}
+
+.Electric {
+  background-color: #F8D030;
+}
+
+.Ice {
+  background-color: #98D8D8;
+}
+
+.Fighting {
+  background-color: #C03028;
+}
+
+.Poison {
+  background-color: #A040A0;
+}
+
+.Ground {
+  background-color: #E0C068;
+}
+
+.Flying {
+  background-color: #A890F0;
+}
+
+.Psychic {
+  background-color: #F85888;
+}
+
+.Bug {
+  background-color: #A8B820;
+}
+
+.Rock {
+  background-color: #B8A038;
+}
+
+.Ghost {
+  background-color: #705898;
+}
+
+.Dragon {
+  background-color: #7038F8;
+}
+
+.Dark {
+  background-color: #705848;
+}
+
+.Steel {
+  background-color: #B8B8D0;
+}
+
+.Fairy {
+  background-color: #EE99AC;
+}
+
+.none {
+  background-color: #000000;
+}
+
+.riset {
+  background-color: #838383;
+}
+
+/*************ここまで各タイプの背景色設定*************/
