@@ -55,19 +55,19 @@ body {
 
 /*************ここから.result設定*************/
 .result {
-  height: 57vh;
+  height: 56vh;
   background-color: antiquewhite;
 }
 
 #result .grid {
-  max-height: 57vh;
+  max-height: 56vh;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
 
 /*親要素に高さの設定をしたい*/
 li:has(>.grid_result) {
-  height: calc(calc( 57vh - (57vh * 3 / 100 * 6)) / 6);
+  height: calc(calc( 56vh - (56vh * 3 / 100 * 6)) / 6);
 }
 
 .grid_result {
