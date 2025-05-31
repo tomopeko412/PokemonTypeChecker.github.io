@@ -1,0 +1,15 @@
+
+Error creating bean with name 'shopRegisterController': Unsatisfied dependency expressed through field 'shopService': 
+Error creating bean with name 'shopService': Unsatisfied dependency expressed through field 'shopRepository': 
+Error creating bean with name 'shopRepository' defined in com.example.repository.ShopRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract com.example.model.Shop com.example.repository.ShopRepository.findByShopid(java.lang.Integer); Reason: Failed to create query for method public abstract com.example.model.Shop com.example.repository.ShopRepository.findByShopid(java.lang.Integer); Could not resolve attribute 'shopid' of 'com.example.model.Shop'
+
+Error creating bean with name 'shopService': Unsatisfied dependency expressed through field 'shopRepository':
+Error creating bean with name 'shopRepository' defined in com.example.repository.ShopRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract com.example.model.Shop com.example.repository.ShopRepository.findByShopname(java.lang.String); Reason: Failed to create query for method public abstract com.example.model.Shop com.example.repository.ShopRepository.findByShopname(java.lang.String); Could not resolve attribute 'shopname' of 'com.example.model.Shop'
+
+Error creating bean with name 'shopRepository' defined in com.example.repository.ShopRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract com.example.model.Shop com.example.repository.ShopRepository.findByShopname(java.lang.String); Reason: Failed to create query for method public abstract com.example.model.Shop com.example.repository.ShopRepository.findByShopname(java.lang.String); Could not resolve attribute 'shopname' of 'com.example.model.Shop'
+
+Could not create query for public abstract com.example.model.Shop com.example.repository.ShopRepository.findByShopname(java.lang.String); Reason: Failed to create query for method public abstract com.example.model.Shop com.example.repository.ShopRepository.findByShopname(java.lang.String); Could not resolve attribute 'shopname' of 'com.example.model.Shop'
+
+Failed to create query for method public abstract com.example.model.Shop com.example.repository.ShopRepository.findByShopname(java.lang.String); Could not resolve attribute 'shopname' of 'com.example.model.Shop'
+
+Could not resolve attribute 'shopname' of 'com.example.model.Shop'

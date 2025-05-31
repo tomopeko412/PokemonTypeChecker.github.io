@@ -30,6 +30,7 @@ body {
   /*ここからズーム禁止処理*/
   touch-action: pan-x pan-y;
   /*ここまでズーム禁止処理*/
+  font-family: "MS PGothic",sans-serif;
 }
 
 .grid {
@@ -55,19 +56,19 @@ body {
 
 /*************ここから.result設定*************/
 .result {
-  height: 56vh;
+  height: 59svh;
   background-color: antiquewhite;
 }
 
 #result .grid {
-  max-height: 56vh;
+  max-height: 59svh;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
 
 /*親要素に高さの設定をしたい*/
 li:has(>.grid_result) {
-  height: calc(calc( 56vh - (56vh * 3 / 100 * 6)) / 6);
+  height: calc(calc(59svh - (59svh * 3 / 100 * 6)) / 6);
 }
 
 .grid_result {
@@ -87,7 +88,7 @@ li:has(>.grid_result) {
 /*************ここから.selecct-type設定*************/
 
 .select-type {
-  height: 31vh;
+  height: 35svh;
   background-color: rgb(163, 108, 108);
 }
 
@@ -97,7 +98,7 @@ li:has(>.grid_result) {
 }
 
 .grid_type {
-  height: calc(31vh/5);
+  height: calc(35svh/5);
   padding: 3% 0px;
 }
 
@@ -105,12 +106,12 @@ li:has(>.grid_result) {
 /*************ここから.Offense-Defense設定*************/
 
 .Offense-Defense {
-  height: 5vh;
+  height: 6svh;
   background-color: rgb(207, 207, 207);
 }
 
 #Offense-Defense .grid {
-  height: calc(5vh);
+  height: calc(6svh);
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -119,7 +120,7 @@ li:has(>.grid_result) {
 }
 
 .border {
-  border: 0.5vh inset #000000c5;
+  border: 0.5svh inset #000000c5;
 }
 
 /*************ここまで.Offense-Defense設定*************/
