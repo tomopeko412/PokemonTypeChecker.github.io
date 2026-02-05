@@ -2,126 +2,126 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <style>
-        body {
-            touch-action: pan-x pan-y;
-        }
-    </style>
-    <title>ポケモンタイプチェッカー</title>
-    <link href="css/index.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <style>
+    body {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  <title>ポケモンタイプチェッカー</title>
+  <link href="./css/index.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="result" class="result">
-        <div class="grid">
-            <li class="Normal">
-                <div class="grid_result">ノーマル</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Fire">
-                <div class="grid_result">ほのお</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Water">
-                <div class="grid_result">みず</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Grass">
-                <div class="grid_result">くさ</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Electric">
-                <div class="grid_result">でんき</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Ice">
-                <div class="grid_result">こおり</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Fighting">
-                <div class="grid_result">かくとう</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Poison">
-                <div class="grid_result">どく</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Ground">
-                <div class="grid_result">じめん</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Flying">
-                <div class="grid_result">ひこう</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Psychic">
-                <div class="grid_result">エスパー</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Bug">
-                <div class="grid_result">むし</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Rock">
-                <div class="grid_result">いわ</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Ghost">
-                <div class="grid_result">ゴースト</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Dragon">
-                <div class="grid_result">ドラゴン</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Dark">
-                <div class="grid_result">あく</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Steel">
-                <div class="grid_result">はがね</div>
-                <div class="magnification"></div>
-            </li>
-            <li class="Fairy">
-                <div class="grid_result">フェアリー</div>
-                <div class="magnification"></div>
-            </li>
-        </div>
+  <div id="result" class="result">
+    <div class="grid">
+      <li class="Normal">
+        <div class="grid_result">ノーマル</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Fire">
+        <div class="grid_result">ほのお</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Water">
+        <div class="grid_result">みず</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Grass">
+        <div class="grid_result">くさ</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Electric">
+        <div class="grid_result">でんき</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Ice">
+        <div class="grid_result">こおり</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Fighting">
+        <div class="grid_result">かくとう</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Poison">
+        <div class="grid_result">どく</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Ground">
+        <div class="grid_result">じめん</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Flying">
+        <div class="grid_result">ひこう</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Psychic">
+        <div class="grid_result">エスパー</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Bug">
+        <div class="grid_result">むし</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Rock">
+        <div class="grid_result">いわ</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Ghost">
+        <div class="grid_result">ゴースト</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Dragon">
+        <div class="grid_result">ドラゴン</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Dark">
+        <div class="grid_result">あく</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Steel">
+        <div class="grid_result">はがね</div>
+        <div class="magnification"></div>
+      </li>
+      <li class="Fairy">
+        <div class="grid_result">フェアリー</div>
+        <div class="magnification"></div>
+      </li>
     </div>
-    <div id="select-type" class="select-type">
-        <div class="grid">
-            <div data-type="Normal" id="grid_type" class="grid_type Normal">ノーマル</div>
-            <div data-type="Fire" id="grid_type" class="grid_type Fire">ほのお</div>
-            <div data-type="Water" id="grid_type" class="grid_type Water">みず</div>
-            <div data-type="Grass" id="grid_type" class="grid_type Grass">くさ</div>
-            <div data-type="Electric" id="grid_type" class="grid_type Electric">でんき</div>
-            <div data-type="Ice" id="grid_type" class="grid_type Ice">こおり</div>
-            <div data-type="Fighting" id="grid_type" class="grid_type Fighting">かくとう</div>
-            <div data-type="Poison" id="grid_type" class="grid_type Poison">どく</div>
-            <div data-type="Ground" id="grid_type" class="grid_type Ground">じめん</div>
-            <div data-type="Flying" id="grid_type" class="grid_type Flying">ひこう</div>
-            <div data-type="Psychic" id="grid_type" class="grid_type Psychic">エスパー</div>
-            <div data-type="Bug" id="grid_type" class="grid_type Bug">むし</div>
-            <div data-type="Rock" id="grid_type" class="grid_type Rock">いわ</div>
-            <div data-type="Ghost" id="grid_type" class="grid_type Ghost">ゴースト</div>
-            <div data-type="Dragon" id="grid_type" class="grid_type Dragon">ドラゴン</div>
-            <div data-type="Dark" id="grid_type" class="grid_type Dark">あく</div>
-            <div data-type="Steel" id="grid_type" class="grid_type Steel">はがね</div>
-            <div data-type="Fairy" id="grid_type" class="grid_type Fairy">フェアリー</div>
-            <div data-type="" id="grid_type" class="grid_type none"></div>
-            <div data-type="riset" id="grid_type" class="grid_type riset">リセット</div>
-        </div>
+  </div>
+  <div id="select-type" class="select-type">
+    <div class="grid">
+      <div data-type="Normal" id="grid_type" class="grid_type Normal">ノーマル</div>
+      <div data-type="Fire" id="grid_type" class="grid_type Fire">ほのお</div>
+      <div data-type="Water" id="grid_type" class="grid_type Water">みず</div>
+      <div data-type="Grass" id="grid_type" class="grid_type Grass">くさ</div>
+      <div data-type="Electric" id="grid_type" class="grid_type Electric">でんき</div>
+      <div data-type="Ice" id="grid_type" class="grid_type Ice">こおり</div>
+      <div data-type="Fighting" id="grid_type" class="grid_type Fighting">かくとう</div>
+      <div data-type="Poison" id="grid_type" class="grid_type Poison">どく</div>
+      <div data-type="Ground" id="grid_type" class="grid_type Ground">じめん</div>
+      <div data-type="Flying" id="grid_type" class="grid_type Flying">ひこう</div>
+      <div data-type="Psychic" id="grid_type" class="grid_type Psychic">エスパー</div>
+      <div data-type="Bug" id="grid_type" class="grid_type Bug">むし</div>
+      <div data-type="Rock" id="grid_type" class="grid_type Rock">いわ</div>
+      <div data-type="Ghost" id="grid_type" class="grid_type Ghost">ゴースト</div>
+      <div data-type="Dragon" id="grid_type" class="grid_type Dragon">ドラゴン</div>
+      <div data-type="Dark" id="grid_type" class="grid_type Dark">あく</div>
+      <div data-type="Steel" id="grid_type" class="grid_type Steel">はがね</div>
+      <div data-type="Fairy" id="grid_type" class="grid_type Fairy">フェアリー</div>
+      <div data-type="" id="grid_type" class="grid_type none"></div>
+      <div data-type="riset" id="grid_type" class="grid_type riset">リセット</div>
     </div>
+  </div>
 
-    <div id="Offense-Defense" class="Offense-Defense">
-        <div class="grid">
-            <div class="grid_Offense-Defense Offense border">攻撃</div>
-            <div class="grid_Offense-Defense Defense">防御</div>
-        </div>
+  <div id="Offense-Defense" class="Offense-Defense">
+    <div class="grid">
+      <div class="grid_Offense-Defense Offense border">攻撃</div>
+      <div class="grid_Offense-Defense Defense">防御</div>
     </div>
-    <script src="/js/Type Calculation.js"></script>
-    <script src="/js/screen.js"></script>
+  </div>
+  <script src="./js/Type Calculation.js"></script>
+  <script src="./js/screen.js"></script>
 </body>
 
 </html>
